@@ -1,0 +1,7 @@
+curl --form 
+client_id=3MVG9sh10GGnD4DspQz6AMTtU92z9gTsaJ.bbHOPuL.6EmkM0kR.XrqiOLyTQyDMNXJKzQ131RtCu5.5Cb5nS 
+    --form client_secret=C9086653E8B10EAB39E48CB9263CD8E28D3E8301B274D6C9863C017370EF040B
+    --form grant_type=password 
+    --form username=judith@keshet-il.org
+    --form password=Aהןה1290!
+https://login.salesforce.com/services/oauth2/token
