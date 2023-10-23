@@ -5,6 +5,7 @@ Copyright 2015-2018 Viktor Szakats <https://vsz.me/>
 See LICENSE.md
 """
 
+
 import calendar
 import datetime
 import glob
@@ -19,7 +20,7 @@ if len(sys.argv) > 2:
             os.path.getmtime(os.path.normpath(sys.argv[1]))).timetuple())
     for argv in sys.argv[2:]:
         for fname in glob.glob(argv):
-            print(datetime.datetime.fromtimestamp(FTIME).isoformat() + ' -> ' + fname)
+            print(f'{datetime.datetime.fromtimestamp(FTIME).isoformat()} -> {fname}')
             pe = pefile.PE(fname)
             pe.FILE_HEADER.TimeDateStamp = FTIME
             try:
